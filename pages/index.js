@@ -26,6 +26,7 @@ import Container from '../components/container'
                author={heroPost.author}
                slug={heroPost.slug}
                excerpt={heroPost.excerpt}
+               categories={heroPost.categories}
              />
            )}
            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
@@ -43,6 +44,7 @@ import Container from '../components/container'
      'author',
      'coverImage',
      'excerpt',
+    'categories',
    ])
 
    return {
