@@ -15,6 +15,14 @@ export default function Index({ allPosts }) {
       <Layout>
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
+            <button
+          className="mt-16 px-4 py-2 text-white dark:text-black bg-black dark:bg-white font-semibold rounded-md"
+          onClick={() => {
+            setTheme(theme === 'light' ? 'dark' : 'light')
+          }}
+        >
+          Change Theme
+        </button>
         </Head>
         <Container>
           <Intro />
