@@ -12,5 +12,5 @@ export default function Categories({ categories }) {
         <span className="ml-1"> - {categories} </span>
       )}
     </span>
-  )
+  ) 
 }
