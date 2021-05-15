@@ -20,6 +20,10 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
+            <div className="mb-6 text-lg">
+          <category {category} />
+        </div>
+
       </div>
     </>
   )
