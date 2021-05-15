@@ -2,6 +2,8 @@ import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from '../components/cover-image'
 import Link from 'next/link'
+import Categories from '../components/categories'
+
 
 export default function HeroPost({
   title,
@@ -10,6 +12,7 @@ export default function HeroPost({
   excerpt,
   author,
   slug,
+  categories,
 }) {
   return (
     <section>
@@ -36,6 +39,7 @@ export default function HeroPost({
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
           <Avatar name={author.name} picture={author.picture} />
+
         </div>
       </div>
     </section>
