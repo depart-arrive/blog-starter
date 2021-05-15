@@ -1,7 +1,7 @@
 export default function Categories({ categories }) {
   return (
     <span className="ml-1">
-       - 
+      
       {categories > 0 ? (
         categories((category, index) => (
           <span key={index} className="ml-1">
@@ -9,7 +9,7 @@ export default function Categories({ categories }) {
           </span>
         ))
       ) : (
-        <span className="ml-1"> {categories} </span>
+        <span className="ml-1"> - {categories} </span>
       )}
     </span>
   )
