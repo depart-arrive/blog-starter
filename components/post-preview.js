@@ -2,6 +2,8 @@ import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import Categories from '../components/categories'
+
 
 export default function PostPreview({
   title,
@@ -10,6 +12,7 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
+  categories,
 }) {
   return (
     <div>
