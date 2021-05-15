@@ -1,14 +1,14 @@
-export default function Tags({ tags }) {
+import Link from 'next/link'
+import kebabCase from '@/lib/utils/kebabCase'
+
+const Tag = ({ text }) => {
   return (
-    <div className="max-w-2xl mx-auto">
-      <p className="mt-8 text-lg font-bold">
-        Tagged
-        {tags.edges.map((tag, index) => (
-          <span key={index} className="ml-4 font-normal">
-            {tag.node.name}
-          </span>
-        ))}
-      </p>
-    </div>
+    <Link href={`/tags/${kebabCase(text)}`}>
+      <a className="mr-3 text-sm font-medium text-blue-500 uppercase hover:text-blue-600 dark:hover:text-blue-400">
+        {text.split(' ').join('-')}
+      </a>
+    </Link>
   )
 }
+
+export default Tag
