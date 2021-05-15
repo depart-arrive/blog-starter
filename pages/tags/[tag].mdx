@@ -1,0 +1,13 @@
+---
+type: categories
+title: Tagged Posts
+---
+
+import { useRouter } from 'next/router'
+
+export const categoriesName = () => {
+  const { categories } = useRouter().query
+  return tag || null
+}
+
+# Posts Tagged with “<categoriesName/>”
