@@ -9,7 +9,7 @@ export default function Categories({ categories }) {
           </span>
         ))
       ) : (
-        <span className="ml-1">{categories}</span>
+        <span className="ml-1"> {categories} </span>
       )}
     </span>
   )
