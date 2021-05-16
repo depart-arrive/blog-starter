@@ -20,7 +20,9 @@ export default function PostHeader({ title, coverImage, date, author, categories
           <Avatar name={author.name} picture={author.picture} />
         </div>
         <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} /> - <Categories categories={categories} />
+          <DateFormatter dateString={date} /> -         <Link href="/categories/{categories}">
+          <a>{categories}</a>
+        </Link> - <Categories categories={categories} />
         </div>
       </div>
     </>
