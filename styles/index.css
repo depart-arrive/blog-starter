@@ -1,6 +1,68 @@
 @tailwind base;
 
+code {
+  font-size: text-base;
+}
+
 /* Write your own custom base styles here */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+    right: 50%;
+  margin-left: -50vw;
+    margin-right: -50vw;
+  padding-top:20px;
+    align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.med-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding:8%;
+  align-content: center;
+  text-align: center;
+     align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.img {
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.caption {
+  text-align: center;
+  width: 90%;
+  position: flex;
+}
+
+
+.alert {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.1 ease-in-out;
+  font-size: 21px;
+}
 
 /* Start purging... */
 @tailwind components;
